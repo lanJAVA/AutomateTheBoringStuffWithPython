@@ -1,0 +1,15 @@
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>python blankRowInserter.py 3 4 merged.xlsx
+
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>python blankRowInserter.py 3 4 merged.xlsx
+
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>python blankRowInserter.py 3 4 merged.xlsx
+
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>python blankRowInserter.py 3 4 merged.xlsx
+
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>python reverseSheet.py example.xlsx
+
+(venv) D:\PycharmProjects\ScalersPython\AutomateTheBoringStuffWithPython\chapter12>
+
+
+

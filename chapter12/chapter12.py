@@ -114,17 +114,16 @@ import openpyxl
 # sheet.freeze_panes = 'B3'
 # wb.save('freezeExample.xlsx')
 
-wb = openpyxl.Workbook()
+from openpyxl import Workbook
+from openpyxl.chart import BarChart, Reference, Series
+
+wb = Workbook()
 sheet = wb.active
 for i in range(1, 11):
-    sheet['A' + str(i)] = i
-refObj = openpyxl.charts.Reference(sheet, (1, 1), (10, 1))
-seriesObj = openpyxl.charts.Series(refObj, title='First series')
-chartObj = openpyxl.charts.BarChart()
-chartObj.append(seriesObj)
-chartObj.drawing.top = 50
-chartObj.drawing.left = 100
-chartObj.drawing.width = 300
-chartObj.drawing.height = 200
-sheet.add_chart(chartObj)
-wb.save('sampleChart.xlsx')
+    sheet.append([i])
+
+refObj = Reference(worksheet=sheet, min_col=1, min_row=1, max_col=1, max_row=10)
+chart = BarChart()
+chart.add_data(refObj)
+sheet.add_chart(chart)
+wb.save('SampleChart.xlsx')
